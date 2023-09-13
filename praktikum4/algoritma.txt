@@ -1,0 +1,35 @@
+Algoritma
+
+1. Meminta input dari pengguna untuk ukuran data (value)
+2. Meminta pengguna untuk memilih satuan awal (init_data)
+3. Meminta pengguna untuk memilih satuan tujuan (des_data)
+
+4. Jika ukuran data < 0:
+    - Tampilkan "value cannot be smaller than 0"
+    - program selesai
+
+5. Jika satuan_awal adalah KB dan satuan_tujuan adalah MB:
+     - result = value / 1_000
+     - Tampilkan Hasil konversi
+
+6. Jika satuan_awal adalah KB dan satuan_tujuan adalah GB:
+     - converted_data = value / 1_000_000
+     - Tampilkan Hasil konversi
+
+7. Jika satuan_awal adalah MB dan satuan_tujuan adalah KB:
+     - converted_data = value * 1000
+     - Tampilkan Hasil konversi
+
+8. Jika satuan_awal adalah MB dan satuan_tujuan adalah GB:
+     - converted_data = value / 1_000 
+     - Tampilkan Hasil konversi
+
+9. Jika satuan_awal adalah GB dan satuan_tujuan adalah KB:
+     - converted_data = value * 1_000_000 
+     - Tampilkan Hasil konversi
+
+10. Jika satuan_awal adalah GB dan satuan_tujuan adalah KB:
+     - converted_data = value * 1_000
+     - Tampilkan Hasil konversi
+
+11. Jika satuan_awal dan satuan_tujuan tidak valid, tampilkan pesan kesalahan.

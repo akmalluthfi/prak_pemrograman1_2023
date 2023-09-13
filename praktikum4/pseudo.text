@@ -1,0 +1,28 @@
+INPUT "Masukkan ukuran data dalam byte: ", value
+INPUT "Pilih satuan awal (KB/MB/GB): ", init_data
+INPUT "Pilih satuan tujuan (KB/MB/GB): ", des_data
+
+IF value < 0 THEN 
+    PRINT "value cannot be smaller than 0"
+ELSE
+    IF init_data == "KB" AND des_data == "MB" THEN
+        result <- value / 1_000
+        PRINT "Hasil konversi:", result, "MB"
+    ELSE IF init_data == "KB" AND des_data == "GB" THEN
+        result <- value / 1_000_000
+        PRINT "Hasil konversi:", result, "GB"
+    ELSE IF init_data == "MB" AND des_data == "KB" THEN
+        result <- value * 1_000
+        PRINT "Hasil konversi:", result, "KB"
+    ELSE IF init_data == "MB" AND des_data == "GB" THEN
+        result <- value / 1_000
+        PRINT "Hasil konversi:", result, "GB"
+    ELSE IF init_data == "GB" AND des_data == "KB" THEN
+        result <- value * 1_000_000
+        PRINT "Hasil konversi:", result, "KB"
+    ELSE IF init_data == "GB" AND des_data == "MB" THEN
+        result <- value * 1_000
+        PRINT "Hasil konversi:", result, "MB"
+    ELSE
+        PRINT "Satuan awal atau satuan tujuan tidak valid."
+
