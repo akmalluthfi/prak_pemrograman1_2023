@@ -1,5 +1,3 @@
-# Program untuk mencari bilangan ganji
-
 num = int(input("Masukkan maks angka : "))
 
 for i in range(1, num + 1):

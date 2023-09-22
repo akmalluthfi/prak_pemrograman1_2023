@@ -1,0 +1,7 @@
+Algoritma untuk program menampilkan bil ganjil dari sebuah deret
+
+1. Meminta input dari pengguna untuk memilih maksimal angka
+2. melakukan perulangan dari angka 1 hingga angka yang diinput user
+3. di setiap perulangan cek apakah angka termasuk bil ganjil/genap
+4. jika termasuk bil genap, maka skip kode dibawahnya dan lanjutkan ke perulangan selanjutnya
+5. lalu cetak bil ke layar
