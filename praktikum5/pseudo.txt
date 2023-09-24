@@ -1,0 +1,20 @@
+INPUT "Masukkan angka maksimal :", num
+FOR i in RANGE(1, num + 1):
+  IF i % 2 == 0 THEN
+    CONTINUE
+  END IF
+
+  PRINT i
+END FOR
+
+INPUT "Masukkan angka maksimal :", num
+i <- 0
+WHILE i < num:
+  i += 1
+
+  IF i % 2 == 0 THEN
+    CONTINUE
+  END IF
+
+  PRINT i
+END WHILE
