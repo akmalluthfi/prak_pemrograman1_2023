@@ -93,6 +93,7 @@ while True:
     number = input("Masukkan digit angka yang akan dicetak ke layar: ")
 
     if not number.isnumeric():
+        print("Anda hanya boleh memasukkan angka (0 ... 9)")
         continue
 
     # if not is_valid(number):
